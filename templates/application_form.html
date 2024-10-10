@@ -26,15 +26,15 @@
 <form class="form" action="/job/{{job.id}}/apply" method="post">
     <div class="box">
         <label for="">Full Name</label>
-        <input type="text" name="full_name" placeholder="your full name">
+        <input type="text" required name="full_name" placeholder="your full name">
     </div>
     <div class="box">
         <label for="">Email</label>
-        <input type="email" name="email" placeholder="your email">
+        <input type="email" required name="email" placeholder="your email">
     </div>
     <div class="box">
         <label for="">Linkedin URL</label>
-        <input type="text" name="linkedin_url" placeholder="your linkedin link">
+        <input type="url" name="linkedin_url" placeholder="your linkedin link">
     </div>
     <div class="box">
         <label for="">Education</label>
@@ -46,7 +46,7 @@
     </div>
     <div class="box">
         <label for="">Resume URL</label>
-        <input type="text" name="resume_url" placeholder="your resume link">
+        <input type="url" name="resume_url" placeholder="your resume link">
     </div>
     <div class="box" style="text-align:center; margin-bottom:0;">
         <button class="btn btn-primary" type="submit">Submit</button>
